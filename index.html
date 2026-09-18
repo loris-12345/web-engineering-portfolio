@@ -1,23 +1,226 @@
 <!DOCTYPE html>
-
 <html lang="de">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Loris | Portfolio</title>
-
+    <meta name="description" content="Portfolio von Loris – Business Information Technology mit Fokus auf Digital Business, Daten und AI.">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
+    <a class="skip-link" href="#main-content">Zum Hauptinhalt springen</a>
 
-    <h1>Web Engineering Portfolio</h1>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Hauptnavigation">
+            <a href="#home" class="navbar__brand">Loris</a>
 
-    <p>Portfolio under construction.</p>
+            <button
+                class="navbar__toggle"
+                id="navToggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="navMenu"
+                aria-label="Navigation öffnen"
+            >
+                <span class="navbar__toggle-bar"></span>
+                <span class="navbar__toggle-bar"></span>
+                <span class="navbar__toggle-bar"></span>
+            </button>
 
+            <ul class="navbar__menu" id="navMenu">
+                <li><a href="#home" class="navbar__link">Home</a></li>
+                <li><a href="#about" class="navbar__link">About</a></li>
+                <li><a href="#skills" class="navbar__link">Skills</a></li>
+                <li><a href="#projects" class="navbar__link">Projects</a></li>
+                <li><a href="#contact" class="navbar__link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section id="home" class="hero">
+            <div class="container hero__inner">
+                <p class="hero__eyebrow">Business Information Technology &middot; Digital Business &amp; AI</p>
+                <h1 class="hero__title">Hi, ich bin <span class="hero__highlight">Loris</span>.</h1>
+                <p class="hero__description">
+                    Ich verbinde Business-Denken mit technischem Verständnis für Daten,
+                    Software und künstliche Intelligenz &ndash; mit dem Ziel, digitale
+                    Lösungen zu entwickeln, die einen echten Mehrwert schaffen.
+                </p>
+                <div class="hero__actions">
+                    <a href="#projects" class="btn btn--primary">Projekte ansehen</a>
+                    <a href="#contact" class="btn btn--secondary">Kontakt aufnehmen</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section about">
+            <div class="container">
+                <div class="section__header">
+                    <p class="section__eyebrow">About</p>
+                    <h2 class="section__title">Über mich</h2>
+                </div>
+                <div class="about__content">
+                    <p>
+                        Ich studiere Business Information Technology und interessiere mich
+                        besonders für die Schnittstelle zwischen Business, Technologie,
+                        Daten und AI. Mich fasziniert, wie datengetriebene Entscheidungen
+                        und moderne Softwarelösungen Unternehmen und Prozesse verändern.
+                    </p>
+                    <p>
+                        Im Rahmen meines Studiums beschäftige ich mich mit Webentwicklung,
+                        Datenanalyse und den Grundlagen von künstlicher Intelligenz &ndash;
+                        stets mit dem Anspruch, Konzepte sauber umzusetzen und verständlich
+                        zu kommunizieren.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section skills">
+            <div class="container">
+                <div class="section__header">
+                    <p class="section__eyebrow">Skills</p>
+                    <h2 class="section__title">Werkzeuge &amp; Technologien</h2>
+                </div>
+                <ul class="skills__grid">
+                    <li class="skill-card">
+                        <span class="skill-card__badge" aria-hidden="true">HTML</span>
+                        <span class="skill-card__name">HTML</span>
+                    </li>
+                    <li class="skill-card">
+                        <span class="skill-card__badge" aria-hidden="true">CSS</span>
+                        <span class="skill-card__name">CSS</span>
+                    </li>
+                    <li class="skill-card">
+                        <span class="skill-card__badge" aria-hidden="true">JS</span>
+                        <span class="skill-card__name">JavaScript</span>
+                    </li>
+                    <li class="skill-card">
+                        <span class="skill-card__badge" aria-hidden="true">PY</span>
+                        <span class="skill-card__name">Python</span>
+                    </li>
+                    <li class="skill-card">
+                        <span class="skill-card__badge" aria-hidden="true">SQL</span>
+                        <span class="skill-card__name">SQL</span>
+                    </li>
+                    <li class="skill-card">
+                        <span class="skill-card__badge" aria-hidden="true">GIT</span>
+                        <span class="skill-card__name">Git</span>
+                    </li>
+                    <li class="skill-card">
+                        <span class="skill-card__badge" aria-hidden="true">GH</span>
+                        <span class="skill-card__name">GitHub</span>
+                    </li>
+                    <li class="skill-card">
+                        <span class="skill-card__badge" aria-hidden="true">FG</span>
+                        <span class="skill-card__name">Figma</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects" class="section projects">
+            <div class="container">
+                <div class="section__header">
+                    <p class="section__eyebrow">Projects</p>
+                    <h2 class="section__title">Ausgewählte Projekte</h2>
+                    <p class="section__subtitle">
+                        Platzhalter-Projekte &ndash; werden im Laufe des Semesters durch
+                        reale Projekte ersetzt.
+                    </p>
+                </div>
+                <div class="projects__grid">
+                    <article class="project-card">
+                        <div class="project-card__media" aria-hidden="true"></div>
+                        <div class="project-card__body">
+                            <h3 class="project-card__title">Business Data Dashboard</h3>
+                            <p class="project-card__description">
+                                Platzhalter-Projekt: Interaktives Dashboard zur Visualisierung
+                                von Geschäftskennzahlen.
+                            </p>
+                            <ul class="project-card__tech">
+                                <li>Python</li>
+                                <li>SQL</li>
+                                <li>JavaScript</li>
+                            </ul>
+                            <a href="#" class="project-card__link">Mehr erfahren &rarr;</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-card__media" aria-hidden="true"></div>
+                        <div class="project-card__body">
+                            <h3 class="project-card__title">AI Assistant Prototyp</h3>
+                            <p class="project-card__description">
+                                Platzhalter-Projekt: Prototyp eines KI-gestützten Assistenten
+                                für einfache Business-Anwendungsfälle.
+                            </p>
+                            <ul class="project-card__tech">
+                                <li>Python</li>
+                                <li>API</li>
+                            </ul>
+                            <a href="#" class="project-card__link">Mehr erfahren &rarr;</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-card__media" aria-hidden="true"></div>
+                        <div class="project-card__body">
+                            <h3 class="project-card__title">Portfolio Website</h3>
+                            <p class="project-card__description">
+                                Diese Website: Persönliches Portfolio, entwickelt im Modul
+                                Web Engineering an der BFH.
+                            </p>
+                            <ul class="project-card__tech">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                            </ul>
+                            <a href="#" class="project-card__link">Mehr erfahren &rarr;</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact">
+            <div class="container">
+                <div class="section__header">
+                    <p class="section__eyebrow">Contact</p>
+                    <h2 class="section__title">Kontakt</h2>
+                    <p class="section__subtitle">
+                        Ich freue mich über Anfragen zu Projekten, Praktika oder
+                        einem fachlichen Austausch.
+                    </p>
+                </div>
+                <ul class="contact__list">
+                    <li>
+                        <a href="mailto:loris@example.com" class="contact__link">
+                            E-Mail: loris@example.com
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/" class="contact__link" target="_blank" rel="noopener noreferrer">
+                            GitHub
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/" class="contact__link" target="_blank" rel="noopener noreferrer">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container site-footer__inner">
+            <p>&copy; 2026 Loris. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
 </body>
-
 </html>
