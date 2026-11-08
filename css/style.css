@@ -315,6 +315,12 @@ button:focus-visible {
     color: var(--color-primary);
 }
 
+@media (min-width: 768px) {
+    .hero__highlight {
+        white-space: nowrap;
+    }
+}
+
 .hero__description {
     font-size: var(--fs-md);
     color: var(--color-text-muted);
@@ -500,21 +506,19 @@ button:focus-visible {
     color: var(--color-text);
 }
 
+.competency--primary .competency__groups > div {
+    padding: var(--space-4);
+    background-color: var(--color-bg-alt);
+    border-radius: var(--radius-sm);
+}
+
 @media (min-width: 900px) {
-    .competencies {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .competency--primary {
-        grid-row: span 2;
-    }
-
-    .competency--wide {
-        grid-column: 1 / -1;
-    }
-
     .competency__groups {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .competency--primary .competency__groups {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
