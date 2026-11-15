@@ -567,6 +567,15 @@ button:focus-visible {
     color: var(--color-primary);
 }
 
+.project-card__role {
+    font-size: var(--fs-sm);
+    color: var(--color-text-muted);
+}
+
+.project-card__role strong {
+    color: var(--color-text);
+}
+
 .project-card__note {
     font-size: var(--fs-sm);
     font-weight: 600;
